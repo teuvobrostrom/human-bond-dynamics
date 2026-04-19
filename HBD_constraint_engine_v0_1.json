@@ -1,0 +1,96 @@
+{
+  "schema_version": "0.1",
+  "document_id": "hbd_constraint_engine_v0_1",
+  "title": "Human Bond Dynamics Constraint Engine",
+  "status": "draft",
+  "system_name": "Human Bond Dynamics",
+  "system_type": "relational_integrity_layer",
+  "purpose": "Defines how Human Bond Dynamics signals combine into higher-order relational assessments.",
+  "combination_rules": [
+    {
+      "id": "FEC-L01",
+      "name": "Instability Detection",
+      "logic": "If FES-L03, FES-L04, and FES-L08 co-occur, output stability_level = unstable and relational_volatility = high."
+    },
+    {
+      "id": "FEC-L02",
+      "name": "Strong Bond Formation",
+      "logic": "If FES-L01, FES-L02, and FES-L06 co-occur, output bond_strength = high."
+    },
+    {
+      "id": "FEC-L03",
+      "name": "Volatility Loop",
+      "logic": "If FES-L04, FES-L05, and FES-L08 co-occur, output cyclical_pattern = confirmed."
+    },
+    {
+      "id": "FEC-L04",
+      "name": "Attachment Risk",
+      "logic": "If FES-L06 and FES-L07 co-occur, output dependency_risk = elevated."
+    },
+    {
+      "id": "FEC-L05",
+      "name": "Trust Fragility",
+      "logic": "If FES-L03 and FES-L09 co-occur, output trust_structure = fragile."
+    },
+    {
+      "id": "FEC-L06",
+      "name": "Jealousy Lockdown Escalation",
+      "logic": "If FES-L10 co-occurs with FES-L04 or FES-L08, output emotional_access = restricted and instability_pressure = elevated."
+    }
+  ],
+  "assessment_fields": {
+    "bond_strength": [
+      "low",
+      "moderate",
+      "high"
+    ],
+    "stability_level": [
+      "stable",
+      "strained",
+      "unstable"
+    ],
+    "dependency_risk": [
+      "low",
+      "elevated",
+      "high"
+    ],
+    "trust_structure": [
+      "resilient",
+      "sensitive",
+      "fragile"
+    ],
+    "cyclical_pattern": [
+      "none",
+      "emerging",
+      "confirmed"
+    ],
+    "emotional_access": [
+      "open",
+      "restricted",
+      "closed"
+    ],
+    "instability_pressure": [
+      "low",
+      "moderate",
+      "elevated",
+      "high"
+    ]
+  },
+  "example_interpretive_rule": {
+    "input_signals": [
+      "FES-L03",
+      "FES-L04",
+      "FES-L05",
+      "FES-L08"
+    ],
+    "output": {
+      "bond_strength": "moderate",
+      "stability_level": "unstable",
+      "dependency_risk": "elevated",
+      "trust_structure": "sensitive",
+      "cyclical_pattern": "confirmed",
+      "emotional_access": "restricted",
+      "instability_pressure": "elevated"
+    }
+  }
+}

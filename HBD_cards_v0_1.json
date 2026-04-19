@@ -1,0 +1,35 @@
+{
+  "schema_version": "0.1",
+  "document_id": "hbd_cards_v0_1",
+  "title": "Human Bond Dynamics Diagnostic Cards",
+  "status": "draft",
+  "system_name": "Human Bond Dynamics",
+  "system_type": "relational_integrity_layer",
+  "cards": [
+    {
+      "id": "FD-L01",
+      "title": "High Intensity Bond",
+      "description": "The relationship forms under strong emotional convergence and early significance."
+    },
+    {
+      "id": "FD-L02",
+      "title": "Volatile Attachment Loop",
+      "description": "The relationship repeatedly cycles through closeness, rupture, and repair."
+    },
+    {
+      "id": "FD-L03",
+      "title": "Fragile Trust Structure",
+      "description": "Trust is vulnerable to relatively small disturbances because symbolic meaning is unevenly distributed."
+    },
+    {
+      "id": "FD-L04",
+      "title": "Dependency Risk",
+      "description": "Emotional reliance on the bond may be outpacing healthy autonomy."
+    },
+    {
+      "id": "FD-L05",
+      "title": "Restricted Emotional Access",
+      "description": "One or both partners become difficult to reach during emotional activation."
+    }
+  ]
+}

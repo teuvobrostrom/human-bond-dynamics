@@ -1,0 +1,89 @@
+{
+  "schema_version": "0.1",
+  "document_id": "hbd_response_templates_v0_1",
+  "title": "Human Bond Dynamics Response Templates",
+  "status": "draft",
+  "system_name": "Human Bond Dynamics",
+  "system_type": "relational_integrity_layer",
+  "output_contract": {
+    "required_fields": [
+      "detected_signals",
+      "diagnostic_cards",
+      "applied_rules",
+      "bond_strength",
+      "stability_level",
+      "dependency_risk",
+      "trust_structure",
+      "cyclical_pattern",
+      "explanation"
+    ],
+    "optional_fields": [
+      "emotional_access",
+      "instability_pressure",
+      "narrative_bias"
+    ]
+  },
+  "templates": [
+    {
+      "id": "FEP-L01",
+      "name": "High Bond / High Instability",
+      "use_when": "Strong attachment and repeated rupture-repair structure are both present.",
+      "template": {
+        "bond_strength": "high",
+        "stability_level": "unstable",
+        "dependency_risk": "{dependency_risk}",
+        "trust_structure": "{trust_structure}",
+        "cyclical_pattern": "confirmed",
+        "explanation": "The narrative indicates a strong bond that is structurally real, but the relationship is being shaped by instability loops rather than steady equilibrium."
+      }
+    },
+    {
+      "id": "FEP-L02",
+      "name": "Sensitive but Repairable Bond",
+      "use_when": "The relationship shows strong feeling with meaningful repair capacity.",
+      "template": {
+        "bond_strength": "{bond_strength}",
+        "stability_level": "strained",
+        "dependency_risk": "{dependency_risk}",
+        "trust_structure": "sensitive",
+        "cyclical_pattern": "{cyclical_pattern}",
+        "explanation": "The relationship shows genuine attachment and repair capacity, but it remains vulnerable to destabilization under pressure."
+      }
+    },
+    {
+      "id": "FEP-L03",
+      "name": "Jealousy Lockdown Pattern",
+      "use_when": "Jealousy repeatedly produces emotional closure or shutdown.",
+      "template": {
+        "bond_strength": "{bond_strength}",
+        "stability_level": "{stability_level}",
+        "dependency_risk": "{dependency_risk}",
+        "trust_structure": "{trust_structure}",
+        "emotional_access": "restricted",
+        "explanation": "The narrative indicates that jealousy is not merely an emotion here; it is functioning as a relational shutdown mechanism."
+      }
+    }
+  ],
+  "example_output": {
+    "detected_signals": [
+      "FES-L03",
+      "FES-L04",
+      "FES-L05",
+      "FES-L08"
+    ],
+    "diagnostic_cards": [
+      "FD-L02",
+      "FD-L03"
+    ],
+    "applied_rules": [
+      "FEC-L01",
+      "FEC-L03"
+    ],
+    "bond_strength": "moderate",
+    "stability_level": "unstable",
+    "dependency_risk": "elevated",
+    "trust_structure": "sensitive",
+    "cyclical_pattern": "confirmed",
+    "explanation": "The bond is real, but it is being carried through a repeated rupture-repair loop rather than stable relational continuity."
+  }
+}

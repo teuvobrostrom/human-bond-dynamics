@@ -1,0 +1,191 @@
+{
+  "schema_version": "0.1",
+  "document_id": "hbd_signal_definitions_v0_1",
+  "title": "Human Bond Dynamics Signal Definitions",
+  "status": "draft",
+  "system_name": "Human Bond Dynamics",
+  "system_type": "relational_integrity_layer",
+  "purpose": "Provides operational definitions for Human Bond Dynamics signals so that relational narratives can be evaluated consistently and explained transparently.",
+  "fields": [
+    "id",
+    "name",
+    "description",
+    "inclusion_criteria",
+    "exclusion_criteria",
+    "false_positive_risk",
+    "default_severity",
+    "escalation_threshold"
+  ],
+  "signals": [
+    {
+      "id": "FES-L01",
+      "name": "Rapid Emotional Convergence",
+      "description": "Detected when two individuals form a strong emotional bond within an unusually short timeframe.",
+      "inclusion_criteria": [
+        "Intense attachment language appears within days or very few encounters",
+        "Immediate sense of exceptional recognition or destiny",
+        "Early exclusivity or emotional centrality"
+      ],
+      "exclusion_criteria": [
+        "Ordinary attraction without strong attachment language",
+        "Gradual intimacy developing over time"
+      ],
+      "false_positive_risk": "Strong first attraction may resemble convergence without creating a durable bond structure.",
+      "default_severity": "moderate",
+      "escalation_threshold": "Escalates when combined with dependency escalation or separation anxiety."
+    },
+    {
+      "id": "FES-L02",
+      "name": "Mutual Vulnerability Disclosure",
+      "description": "Detected when both parties disclose emotionally significant history early in the bond.",
+      "inclusion_criteria": [
+        "Reciprocal disclosure of divorce, grief, loneliness, or fear",
+        "Early emotional trust signaling",
+        "Verbalized mutual openness"
+      ],
+      "exclusion_criteria": [
+        "One-sided disclosure only",
+        "Superficial biographical exchange"
+      ],
+      "false_positive_risk": "Open conversation can be mistaken for deep vulnerability when emotional stakes remain low.",
+      "default_severity": "low",
+      "escalation_threshold": "Becomes structurally important when paired with rapid convergence or dependency escalation."
+    },
+    {
+      "id": "FES-L03",
+      "name": "Boundary Shock Event",
+      "description": "Detected when an unexpected behavior or signal abruptly destabilizes trust, certainty, or emotional temperature.",
+      "inclusion_criteria": [
+        "Sudden freezing after a perceived boundary crossing",
+        "Unexpected behavior producing immediate doubt",
+        "Abrupt re-evaluation of the bond"
+      ],
+      "exclusion_criteria": [
+        "Minor misunderstanding with no relational destabilization",
+        "Ordinary discomfort without attachment impact"
+      ],
+      "false_positive_risk": "A brief surprise may look like shock even when the bond structure remains stable.",
+      "default_severity": "moderate",
+      "escalation_threshold": "Escalates when followed by withdrawal, rupture, or repeated mistrust."
+    },
+    {
+      "id": "FES-L04",
+      "name": "Freeze Response",
+      "description": "Detected when one party emotionally shuts down, withdraws, or becomes inaccessible under relational stress.",
+      "inclusion_criteria": [
+        "Sudden silence",
+        "Emotional numbness or shutdown",
+        "Abrupt relational withdrawal after trigger"
+      ],
+      "exclusion_criteria": [
+        "Short pause used for self-regulation without detachment",
+        "Ordinary need for temporary solitude"
+      ],
+      "false_positive_risk": "Healthy boundary-taking may resemble freezing when context is thin.",
+      "default_severity": "high",
+      "escalation_threshold": "Escalates when repeated as a dominant rupture pattern."
+    },
+    {
+      "id": "FES-L05",
+      "name": "Reconciliation Pullback",
+      "description": "Detected when a rupture is followed by an active attempt to restore connection, reassurance, or closeness.",
+      "inclusion_criteria": [
+        "Direct attempt to repair after rupture",
+        "Emotional reunion after distance",
+        "Mutual return after freeze or conflict"
+      ],
+      "exclusion_criteria": [
+        "Surface-level contact without repair intent",
+        "Return driven purely by convenience"
+      ],
+      "false_positive_risk": "Short-term reunion may be mistaken for repair when the underlying instability remains unchanged.",
+      "default_severity": "low",
+      "escalation_threshold": "Becomes structurally important when repeated in a cycle with freeze and rupture."
+    },
+    {
+      "id": "FES-L06",
+      "name": "Dependency Escalation",
+      "description": "Detected when emotional reliance increases rapidly and the bond becomes central to stability, meaning, or daily regulation.",
+      "inclusion_criteria": [
+        "Strong need for constant contact",
+        "Emotional functioning tied tightly to the other person",
+        "High daily communication load"
+      ],
+      "exclusion_criteria": [
+        "Healthy longing without destabilization",
+        "Strong affection that preserves autonomy"
+      ],
+      "false_positive_risk": "Intense early love can look dependent without true autonomy loss.",
+      "default_severity": "high",
+      "escalation_threshold": "Escalates when combined with separation anxiety, jealousy, or repeated rupture cycles."
+    },
+    {
+      "id": "FES-L07",
+      "name": "Separation Anxiety Spike",
+      "description": "Detected when physical distance or temporary loss of contact produces disproportionate distress.",
+      "inclusion_criteria": [
+        "Marked anguish before or during separation",
+        "Extreme distress around travel or distance",
+        "Strong collapse in emotional state when contact is threatened"
+      ],
+      "exclusion_criteria": [
+        "Ordinary sadness during goodbye",
+        "Missing someone without dysregulation"
+      ],
+      "false_positive_risk": "Romantic longing may resemble anxiety without becoming structurally destabilizing.",
+      "default_severity": "moderate",
+      "escalation_threshold": "Escalates when the relationship cannot maintain equilibrium under ordinary separation."
+    },
+    {
+      "id": "FES-L08",
+      "name": "Attachment Loop Cycle",
+      "description": "Detected when the bond repeatedly cycles through connection, rupture, and reconnection.",
+      "inclusion_criteria": [
+        "Multiple rupture-repair loops",
+        "Hold/let-go pattern repeats",
+        "Instability becomes cyclical rather than exceptional"
+      ],
+      "exclusion_criteria": [
+        "Single rupture followed by stable repair",
+        "Normal conflict without recurrent looping"
+      ],
+      "false_positive_risk": "A short, intense early phase may look cyclical before the bond stabilizes.",
+      "default_severity": "high",
+      "escalation_threshold": "Escalates when the loop becomes the dominant structure of the relationship."
+    },
+    {
+      "id": "FES-L09",
+      "name": "Asymmetric Emotional Trigger",
+      "description": "Detected when one party experiences intense emotional impact from stimuli the other does not experience as equally significant.",
+      "inclusion_criteria": [
+        "One-sided freezing, panic, or overreaction",
+        "Different symbolic meanings assigned to the same event",
+        "Emotional asymmetry around perceived offense"
+      ],
+      "exclusion_criteria": [
+        "Mutual distress at similar intensity",
+        "Plain disagreement without attachment impact"
+      ],
+      "false_positive_risk": "Ordinary sensitivity differences may look structurally asymmetrical when they are situational.",
+      "default_severity": "moderate",
+      "escalation_threshold": "Escalates when it repeatedly destabilizes trust or reconciliation."
+    },
+    {
+      "id": "FES-L10",
+      "name": "Jealousy Lockdown Pattern",
+      "description": "Detected when jealousy causes emotional closure, withdrawal, rigidity, or repeated relational shutdown.",
+      "inclusion_criteria": [
+        "Silence or shutdown after jealousy trigger",
+        "Relational access blocked by jealousy",
+        "Rigid emotional closure following perceived threat"
+      ],
+      "exclusion_criteria": [
+        "Transparent jealousy discussed without shutdown",
+        "Momentary insecurity with rapid recovery"
+      ],
+      "false_positive_risk": "Ordinary insecurity may look like lockdown if only one episode is visible.",
+      "default_severity": "high",
+      "escalation_threshold": "Escalates when jealousy becomes a recurrent control or shutdown mechanism."
+    }
+  ]
+}
