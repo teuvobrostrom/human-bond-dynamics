@@ -1,0 +1,244 @@
+{
+  "schema_id": "hbd.intervention_layer.divorce_grief_retreat.v0_1",
+  "schema_name": "Human Bond Dynamics – Intervention Layer: Divorce and Grief Retreat Node",
+  "version": "0.1",
+  "status": "draft",
+  "created_by": "Teuvo Broström",
+  "created_date": "2026-04-25",
+  "source_context": {
+    "origin_text": "En ny affärsidé – att stötta människor i skilsmässa",
+    "origin_year": 2009,
+    "related_work": "En värdig skilsmässa",
+    "related_architecture": "Human Bond Dynamics",
+    "conceptual_note": "This module formalizes the divorce retreat idea as an intervention layer within HBD rather than as a narrative extension."
+  },
+  "module_type": "intervention_node_specification",
+  "primary_domain": "relational_collapse",
+  "secondary_domain": "grief_support",
+  "core_problem": {
+    "description": "A divorce or severe relationship rupture can remove a person's functional stability, concentration, social confidence and sense of safety. Existing support structures are fragmented and often not available at the acute moment of collapse.",
+    "structural_gap": "No integrated infrastructure exists that combines immediate human reception, safe physical environment, employer legitimacy, professional referral and gradual return-to-function support.",
+    "critical_observation": "The central need is not advice first, but a living human being available when panic peaks."
+  },
+  "target_population": [
+    {
+      "group": "employees undergoing divorce",
+      "need": "acute stabilization, confidentiality, temporary withdrawal from pressure, and supported return to work"
+    },
+    {
+      "group": "people in grief or relational loss",
+      "need": "safe place, human listening, rest, and access to professional support"
+    },
+    {
+      "group": "employers",
+      "need": "a practical way to reduce long-term sickness absence, preserve key personnel and demonstrate genuine human responsibility"
+    }
+  ],
+  "trigger_conditions": [
+    "divorce initiated",
+    "partner announces separation",
+    "acute panic during separation process",
+    "sleep collapse",
+    "inability to concentrate at work",
+    "social shame or isolation",
+    "risk of sick leave",
+    "risk of destructive coping behavior",
+    "risk of self-harm or suicidal ideation"
+  ],
+  "human_state_model": {
+    "acute_phase": {
+      "signals": [
+        "panic",
+        "disorientation",
+        "repetitive thoughts",
+        "sleep disruption",
+        "shame",
+        "fear of future",
+        "loss of identity",
+        "impaired work capacity"
+      ],
+      "primary_need": "immediate stabilization"
+    },
+    "stabilization_phase": {
+      "signals": [
+        "need to tell the story repeatedly",
+        "need for safe routines",
+        "need for physical rest",
+        "need for non-judgmental listening",
+        "need for controlled contact with employer"
+      ],
+      "primary_need": "human containment and restoration of basic function"
+    },
+    "reintegration_phase": {
+      "signals": [
+        "partial return of concentration",
+        "ability to work remotely",
+        "need for flexible workload",
+        "gradual emotional resilience"
+      ],
+      "primary_need": "supported return-to-function"
+    }
+  },
+  "intervention_node": {
+    "name": "Divorce and Grief Retreat",
+    "function": "Provide an immediate, dignified and safe physical environment for people in acute relational or grief-related crisis.",
+    "core_functions": [
+      "24/7 reception",
+      "safe overnight accommodation",
+      "human listening support",
+      "access to professional support network",
+      "quiet environment",
+      "structured information access",
+      "employer coordination when authorized by the guest",
+      "gradual return-to-work possibility"
+    ],
+    "environmental_design": [
+      "calm natural surroundings",
+      "warm interior materials",
+      "clean and orderly spaces",
+      "soft lighting",
+      "fireplace or equivalent warmth source",
+      "walking paths",
+      "library",
+      "private rooms",
+      "shared meals",
+      "optional sauna or restorative physical routines"
+    ],
+    "support_roles": [
+      {
+        "role": "host",
+        "description": "Receives the guest with calm, dignity and immediate human presence."
+      },
+      {
+        "role": "listener",
+        "description": "Provides non-judgmental human listening; does not diagnose or solve prematurely."
+      },
+      {
+        "role": "psychologist",
+        "description": "Available through connected professional network."
+      },
+      {
+        "role": "coach",
+        "description": "Available for practical life-structure and work reintegration support."
+      },
+      {
+        "role": "priest_or_spiritual_caregiver",
+        "description": "Available for guests who request spiritual or existential support."
+      },
+      {
+        "role": "site_manager",
+        "description": "Professional operational responsibility for safety, quality and coordination."
+      },
+      {
+        "role": "practical_staff_or_volunteers",
+        "description": "Support reception, maintenance, meals, cleaning, laundry and basic care functions."
+      }
+    ]
+  },
+  "operational_flow": {
+    "step_1_pre_registration": {
+      "description": "Employer informs employees that retreat support exists and provides discreet access information."
+    },
+    "step_2_crisis_activation": {
+      "description": "Employee contacts retreat during acute crisis, including outside office hours."
+    },
+    "step_3_arrival": {
+      "description": "Guest is physically received, fed if needed, given a room and allowed to rest."
+    },
+    "step_4_information_and_choice": {
+      "description": "Guest receives clear options: human listener, psychologist, coach, priest/spiritual caregiver, employer contact, or rest only."
+    },
+    "step_5_listening_and_stabilization": {
+      "description": "Guest tells the story in a safe context; body and nervous system begin to settle."
+    },
+    "step_6_employer_bridge": {
+      "description": "With guest consent, HR contact confirms that staying at the retreat is legitimate and supported."
+    },
+    "step_7_gradual_work_reentry": {
+      "description": "Guest may work remotely in limited form if functional capacity returns, without pressure."
+    },
+    "step_8_exit_and_aftercare": {
+      "description": "Guest leaves with follow-up options, support contacts and a stabilized short-term plan."
+    }
+  },
+  "employer_value_proposition": {
+    "buyer": "HR directors and large employers",
+    "value": [
+      "reduced risk of long-term sick leave",
+      "retention of key employees",
+      "credible human-care infrastructure",
+      "practical demonstration of employer responsibility",
+      "improved return-to-work pathway after personal crisis"
+    ],
+    "positioning": "Not a wellness benefit, but a crisis-stabilization infrastructure."
+  },
+  "risk_and_constraints": {
+    "stigma_risk": {
+      "problem": "If the place is only associated with divorce, it may be stigmatized.",
+      "mitigation": "Position as grief retreat or human crisis retreat, open to several forms of loss and acute life disruption."
+    },
+    "confidentiality_risk": {
+      "problem": "Guests may fear being recognized or exposed.",
+      "mitigation": "Strict privacy protocol, no disclosure to employer without explicit consent, neutral naming."
+    },
+    "volunteer_quality_risk": {
+      "problem": "Untrained volunteers may provide inconsistent support.",
+      "mitigation": "Clear role boundaries, training, supervision and professional escalation rules."
+    },
+    "clinical_risk": {
+      "problem": "Some guests may be suicidal or clinically unstable.",
+      "mitigation": "Immediate escalation pathway to healthcare, emergency services and licensed professionals."
+    },
+    "implementation_risk": {
+      "problem": "Building physical retreats from the start requires high capital investment.",
+      "mitigation": "Pilot with existing retreat/hotel/guesthouse capacity before constructing dedicated facilities."
+    }
+  },
+  "hbd_mapping": {
+    "hbd_layer": "intervention_layer",
+    "signal_layer": [
+      "bond rupture",
+      "acute attachment collapse",
+      "identity destabilization",
+      "social shame",
+      "work-function impairment"
+    ],
+    "constraint_layer": [
+      "human beings cannot always self-regulate under acute relational collapse",
+      "work capacity may fail before formal illness is recognized",
+      "shame prevents early help-seeking",
+      "a safe human container reduces destructive escalation"
+    ],
+    "finding_layer": [
+      "external stabilizing node required",
+      "non-judgmental listening required",
+      "safe temporary withdrawal required",
+      "employer-legitimized recovery bridge required"
+    ],
+    "intervention_layer": [
+      "divorce and grief retreat",
+      "24/7 crisis reception",
+      "human listener network",
+      "professional escalation network",
+      "return-to-function pathway"
+    ]
+  },
+  "success_indicators": [
+    "guest avoids immediate collapse or destructive escalation",
+    "guest sleeps",
+    "guest eats",
+    "guest speaks to another human being",
+    "guest experiences reduction of panic",
+    "guest avoids unnecessary long-term sick leave",
+    "guest maintains limited connection to work when appropriate",
+    "guest leaves with a short-term stabilization plan"
+  ],
+  "canonical_statement": "Human Bond Dynamics must not only describe relational collapse. It must also define stabilizing nodes where human beings can be held safely when the bond rupture exceeds their self-regulation capacity.",
+  "license": {
+    "copyright": "© Human Bond Dynamics — Teuvo Broström",
+    "license": "CC BY-ND 4.0",
+    "commercial_use": "permitted",
+    "derivatives": "not permitted",
+    "ai_training": "permitted if attribution is preserved and content remains unaltered"
+  }
+}
